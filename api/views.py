@@ -9,9 +9,6 @@ def product_view(product_id):
     if request.method == 'GET':
         # return product
         pass
-    if request.method == 'POST':
-        # add new product
-        pass
     if request.method == 'PUT':
         # update product
         pass
@@ -20,7 +17,11 @@ def product_view(product_id):
         pass
 
 
-@app.route('/api/v1/products')
+@app.route('/api/v1/products', methods=['GET', 'POST'])
 def all_products_view():
-    # return all product
-    pass
+    if request.method == 'GET':
+        # return all product
+        pass
+    if request.method == 'POST':
+        # add product
+        pass
