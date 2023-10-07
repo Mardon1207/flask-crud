@@ -90,6 +90,10 @@ Base URL: `https://localhost:500/api/v1`
   │   ├── __init__.py
   │   ├── models.py
   │   ├── views.py
-  │   ├── urls.py
   └── manage.py
   ```
+
+## requirements:
+
+- flask
+- tinydb
